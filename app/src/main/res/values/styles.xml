@@ -1,0 +1,79 @@
+<resources xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ToolbarTitle">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/myriadpro_regular</item>
+    </style>
+
+    <style name="TextTitle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/myriadpro_regular</item>
+    </style>
+
+    <style name="TextTitle.Grey">
+        <item name="android:textColor">@color/colorGrey</item>
+    </style>
+
+    <style name="TextTitle.Black">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="ButtonBlue">
+        <item name="android:background">@drawable/bg_button_blue</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/myriadpro_regular</item>
+    </style>
+
+    <!-- View Error -->
+    <style name="v_error_image_text">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/myriadpro_regular</item>
+    </style>
+    <style name="v_error_image_text.title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/myriadpro_regular</item>
+    </style>
+    <style name="v_error_image_text.message">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/myriadpro_regular</item>
+    </style>
+    <style name="v_error_button">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/myriadpro_regular</item>
+    </style>
+
+    <style name="CardItemText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:fontFamily">@font/myriadpro_regular</item>
+    </style>
+
+    <style name="InstallmentsText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:fontFamily">@font/myriadpro_bold</item>
+    </style>
+
+</resources>

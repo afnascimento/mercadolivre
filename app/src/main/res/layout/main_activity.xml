@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.main.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/ToolbarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="@string/mercado_pago"
+        app:titleTextAppearance="@style/ToolbarTitle"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/TextTitle.Grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/valor"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:textColor="@color/colorBlack"
+            android:textSize="35sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R$" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/editValue"
+            android:textSize="35sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:inputType="numberDecimal"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGrey"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/TextTitle.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/meio_de_pagamento"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/tvChangePayment"
+                android:layout_toStartOf="@+id/tvChangePayment" />
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/TextTitle.Grey"
+                android:id="@+id/tvChangePayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="@font/myriadpro_bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contentChoice"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_vertical"
+            android:foreground="?attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true"
+            android:visibility="visible">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/TextTitle.Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/escolher"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toLeftOf="@+id/imgRight"
+                android:layout_toStartOf="@+id/imgRight" />
+
+            <android.support.v7.widget.AppCompatImageView
+                app:tint="#757575"
+                app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:id="@+id/imgRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/contentMethodPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imgMethodPayment"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/placeholder" />
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/CardItemText"
+                android:id="@+id/tvMethodPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/payment_item_text"
+                android:maxLines="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/contentBank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/TextTitle.Grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/banco"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imgBank"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/placeholder" />
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/CardItemText"
+                android:id="@+id/tvBank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/payment_item_text"
+                android:maxLines="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contentInstallments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/TextTitle.Grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/installments"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/CardItemText"
+            android:id="@+id/tvTextInstallment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/installments_text"
+            android:maxLines="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGrey"/>
+
+    <android.support.v7.widget.AppCompatButton
+        style="@style/ButtonBlue"
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/continuar"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:enabled="false"/>
+
+</LinearLayout>

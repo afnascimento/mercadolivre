@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/ToolbarStyle"
+        android:id="@+id/toolbarInstallments"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="@string/installments_title"
+        app:titleTextAppearance="@style/ToolbarTitle"
+        app:contentInsetStartWithNavigation="0dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/CardItemText"
+                android:fontFamily="@font/myriadpro_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/meio_de_pagamento" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imgPayment"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/placeholder"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/CardItemText"
+                android:id="@+id/tvTextPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/payment_item_text"
+                android:maxLines="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/CardItemText"
+                android:fontFamily="@font/myriadpro_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bank" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imgBank"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/placeholder"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/CardItemText"
+                android:id="@+id/tvBankText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/payment_item_text"
+                android:maxLines="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGrey"/>
+
+    <com.github.afnascimento.mercadopago.ui.widget.ContentLoadView
+        android:id="@+id/contentLoad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:id="@+id/contentMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="5dp"
+            app:cardMaxElevation="2dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:id="@+id/contentItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/installments_item"/>
+
+                <include layout="@layout/installments_item"/>
+
+                <include layout="@layout/installments_item"/>
+
+                <include layout="@layout/installments_item"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </ScrollView>
+
+</LinearLayout>

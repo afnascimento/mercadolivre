@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">MercadoPago</string>
+    <string name="mercado_pago">Mercado Pago</string>
+    <string name="valor">Valor</string>
+    <string name="meio_de_pagamento">Meio de pagamento</string>
+    <string name="escolher">Escolher</string>
+    <string name="continuar">Continuar</string>
+
+    <string name="v_error_tentar_nov">Tentar Novamente</string>
+    <string name="v_error_offline_title">Parece que não há internet</string>
+    <string name="v_error_offline_message">Confira se o seu celular está conectado á\ninternet e tente novamente.</string>
+
+    <!-- Messages Errors -->
+    <string name="msg_error_offline_title">Parece que não há internet</string>
+    <string name="msg_error_offline_text">Confira se o seu celular está conectado á\ninternet e tente novamente.</string>
+
+    <string name="msg_error_timeout_title">Erro ocorrido</string>
+    <string name="msg_error_timeout_text">Servidor ocupado, tente novamente.</string>
+
+    <string name="msg_error_empty_title">Nenhum dado foi encontrado</string>
+    <string name="msg_error_empty_text">Sem dados á serem exibidos</string>
+
+    <string name="msg_error_generic_title">Erro ocorrido</string>
+    <string name="msg_error_generic_text">Desculpe ocorreu um erro inesperado, tente novamente.</string>
+    <string name="payment_item_text">Mercado Pago + Banco Patagonia</string>
+    <string name="choice_method_payment">Selecione Método Pagamento</string>
+    <string name="escolha_banco">Escolha o Banco</string>
+    <string name="installments_text">3 cuotas de $ 4,51 ($ 13,53)</string>
+    <string name="installments_title">Quantas Parcelas quer pagar</string>
+    <string name="bank">Banco</string>
+
+    <string name="choice_payment_value_empty">Informe um valor</string>
+    <string name="choice_payment_value_invalid">informe um valor maior que R$ 0.00</string>
+    <string name="banco">Banco</string>
+    <string name="installments">Parcelas</string>
+    <string name="change">Alterar</string>
+
+    <string name="payment_send_sucess">Pagamento Enviado</string>
+
+
+</resources>
